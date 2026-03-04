@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atul's Portfolio</title>
+  <meta name="description"
+    content="Atul's portfolio website showcasing coding projects and skills. An Electrical engineering student set to graduate in 2028." />
+  <meta name="keywords"
+    content="Atul, Portfolio, Coding, Electrical Engineering, 2028 Graduate, CodeEnthusiast, TechExplorer" />
+  <meta name="author" content="Atul Kumar Tiwari" />
+  <link rel="icon" href="/assets/profile-pic.jpeg" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://www.unpkg.com/shery-js@1.0.0-alpha.0.5/dist/Shery.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <link href="dist/hamburgers.css" rel="stylesheet">
+</head>
+
+<body onload="myFunction()">
+
+  <!-- LOADER -->
+  <div id="loading" class="loader_bg">
+    <div id="load">
+      <div>G</div>
+      <div>N</div>
+      <div>I</div>
+      <div>D</div>
+      <div>A</div>
+      <div>O</div>
+      <div>L</div>
+    </div>
+  </div>
+  <!-- LOADER END -->
+
+  <div id="mainContent" style="display: none;">
+    <nav id="desktop-nav">
+      <div class="logo">Atul Tiwari</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <label id="theme-toggle-button" class="toggleSvg">
+            <input type="checkbox" id="toggle">
+            <svg viewBox="0 0 69.667 44" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(3.5 3.5)" data-name="Component 15 – 1" id="Component_15_1">
+
+
+                <g filter="url(#container)" transform="matrix(1, 0, 0, 1, -3.5, -3.5)">
+                  <rect fill="#83cbd8" transform="translate(3.5 3.5)" rx="17.5" height="35" width="60.667"
+                    data-name="container" id="container"></rect>
+                </g>
+
+                <g transform="translate(2.333 2.333)" id="button">
+
+                  <g data-name="sun" id="sun light-mode">
+                    <g filter="url(#sun-outer)" transform="matrix(1, 0, 0, 1, -5.83, -5.83)">
+                      <circle fill="#f8e664" transform="translate(5.83 5.83)" r="15.167" cy="15.167" cx="15.167"
+                        data-name="sun-outer" id="sun-outer-2"></circle>
+                    </g>
+                    <g filter="url(#sun)" transform="matrix(1, 0, 0, 1, -5.83, -5.83)">
+                      <path fill="rgba(246,254,247,0.29)" transform="translate(9.33 9.33)"
+                        d="M11.667,0A11.667,11.667,0,1,1,0,11.667,11.667,11.667,0,0,1,11.667,0Z" data-name="sun"
+                        id="sun-3"></path>
+                    </g>
+                    <circle fill="#fcf4b9" transform="translate(8.167 8.167)" r="7" cy="7" cx="7" id="sun-inner">
+                    </circle>
+                  </g>
+
+
+                  <g data-name="moon" id="moon dark-mode">
+                    <g filter="url(#moon)" transform="matrix(1, 0, 0, 1, -31.5, -5.83)">
+                      <circle fill="#cce6ee" transform="translate(31.5 5.83)" r="15.167" cy="15.167" cx="15.167"
+                        data-name="moon" id="moon-3"></circle>
+                    </g>
+                    <g fill="#a6cad0" transform="translate(-24.415 -1.009)" id="patches">
+                      <circle transform="translate(43.009 4.496)" r="2" cy="2" cx="2"></circle>
+                      <circle transform="translate(39.366 17.952)" r="2" cy="2" cx="2" data-name="patch"></circle>
+                      <circle transform="translate(33.016 8.044)" r="1" cy="1" cx="1" data-name="patch"></circle>
+                      <circle transform="translate(51.081 18.888)" r="1" cy="1" cx="1" data-name="patch"></circle>
+                      <circle transform="translate(33.016 22.503)" r="1" cy="1" cx="1" data-name="patch"></circle>
+                      <circle transform="translate(50.081 10.53)" r="1.5" cy="1.5" cx="1.5" data-name="patch"></circle>
+                    </g>
+                  </g>
+                </g>
+
+
+                <g filter="url(#cloud)" transform="matrix(1, 0, 0, 1, -3.5, -3.5)">
+                  <path fill="#fff" transform="translate(-3466.47 -160.94)"
+                    d="M3512.81,173.815a4.463,4.463,0,0,1,2.243.62.95.95,0,0,1,.72-1.281,4.852,4.852,0,0,1,2.623.519c.034.02-.5-1.968.281-2.716a2.117,2.117,0,0,1,2.829-.274,1.821,1.821,0,0,1,.854,1.858c.063.037,2.594-.049,3.285,1.273s-.865,2.544-.807,2.626a12.192,12.192,0,0,1,2.278.892c.553.448,1.106,1.992-1.62,2.927a7.742,7.742,0,0,1-3.762-.3c-1.28-.49-1.181-2.65-1.137-2.624s-1.417,2.2-2.623,2.2a4.172,4.172,0,0,1-2.394-1.206,3.825,3.825,0,0,1-2.771.774c-3.429-.46-2.333-3.267-2.2-3.55A3.721,3.721,0,0,1,3512.81,173.815Z"
+                    data-name="cloud" id="cloud"></path>
+                </g>
+
+
+                <g fill="#def8ff" transform="translate(3.585 1.325)" id="stars">
+                  <path transform="matrix(-1, 0.017, -0.017, -1, 24.231, 3.055)"
+                    d="M.774,0,.566.559,0,.539.458.933.25,1.492l.485-.361.458.394L1.024.953,1.509.592.943.572Z"></path>
+                  <path transform="matrix(-0.777, 0.629, -0.629, -0.777, 23.185, 12.358)"
+                    d="M1.341.529.836.472.736,0,.505.46,0,.4.4.729l-.231.46L.605.932l.4.326L.9.786Z" data-name="star">
+                  </path>
+                  <path transform="matrix(0.438, 0.899, -0.899, 0.438, 23.177, 29.735)"
+                    d="M.015,1.065.475.9l.285.365L.766.772l.46-.164L.745.494.751,0,.481.407,0,.293.285.658Z"
+                    data-name="star"></path>
+                  <path transform="translate(12.677 0.388) rotate(104)"
+                    d="M1.161,1.6,1.059,1,1.574.722.962.607.86,0,.613.572,0,.457.446.881.2,1.454l.516-.274Z"
+                    data-name="star"></path>
+                  <path transform="matrix(-0.07, 0.998, -0.998, -0.07, 11.066, 15.457)"
+                    d="M.873,1.648l.114-.62L1.579.945,1.03.62,1.144,0,.706.464.157.139.438.7,0,1.167l.592-.083Z"
+                    data-name="star"></path>
+                  <path transform="translate(8.326 28.061) rotate(11)"
+                    d="M.593,0,.638.724,0,.982l.7.211.045.724.36-.64.7.211L1.342.935,1.7.294,1.063.552Z"
+                    data-name="star"></path>
+                  <path transform="translate(5.012 5.962) rotate(172)"
+                    d="M.816,0,.5.455,0,.311.323.767l-.312.455.516-.215.323.456L.827.911,1.343.7.839.552Z"
+                    data-name="star"></path>
+                  <path transform="translate(2.218 14.616) rotate(169)"
+                    d="M1.261,0,.774.571.114.3.487.967,0,1.538.728,1.32l.372.662.047-.749.728-.218L1.215.749Z"
+                    data-name="star"></path>
+                </g>
+              </g>
+            </svg>
+          </label>
+
+          <li id="light-mode"></li>
+          <li id="dark-mode"></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Atul Tiwari</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpeg" id="profile-pic" alt="./assets/profile-pic.jpeg" />
+      </div>
+
+      <div class="background">
+        <img src="assets/shape-wawes.svg" class="background1 graphics-backgrounds" alt="">
+        <img src="assets/shape-circle.svg" alt="" class="background2 graphics-backgrounds">
+      </div>
+
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">&lt;Atul Tiwari/&gt;</h1>
+        <p class="section__text__p2"><span id="element"></span></p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 download" onclick="window.open('./assets/Indrajit Pal CV 1.0.pdf')">
+            Download <i class="ri-download-line"></i>
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+            onclick="location.href='https://www.linkedin.com/in/atul-kumar-tiwari-73a264328'" />
+
+          <img src="./assets/instagram-fill.svg" alt="My Instagram profile" class="icon"
+            onclick="location.href='https://www.instagram.com/atul_tiwari26/'" />
+
+          <img src="./assets/github.png" alt="My Github profile" class="icon"
+            onclick="location.href='https://github.com/atul-dev26'" />
+        </div>
+      </div>
+    </section>
+    <section id="education">
+      <p class="section__text__p1">Go Through My</p>
+      <h1 class="title">Education</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/education_section.jpg" alt="Education picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/college.png" alt="College icon" class="icon" />
+              <h3>College</h3>
+              <p> <b> Netaji subhash University of Technolofy</b> <br />Electrical Engineering</p>
+              <p> <b> Grade:</b> 8.2 <br />2024 - 2028</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/school-fill.svg" alt="School" class="icon" />
+              <h3>School</h3>
+              <p><b>B.R.G.S.B.V</b> <br> Science<br /><b>Grade:</b> 90%</p>
+              <p>2022 - 2024</p>
+              <br>
+              <i class="ri-arrow-left-line"></i>
+            </div>
+            <div class="details-container">
+              <img src="./assets/school-fill.svg" alt="School" class="icon" />
+              <h3>School</h3>
+              <p><b>Bhai Parmanand Vidya Mandir School</b> <br /><b>Grade:</b> 95.4%</p>
+              <p>2020 - 2022</p>
+              <br>
+              <i class="ri-arrow-left-line"></i>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm Atul, an Electrical engineering student set to graduate in 2028. Coding is my passion, and
+              I'm
+              an enthusiastic problem solver.One thing that keeps me going even after facing challenges in this field is the joy of creating something new. Excited to explore the tech world and make a positive impact! 
+              #CodeEnthusiast #FutureGraduate
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title underline">Technologies / Frameworks</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/reactjs-line.svg" alt="React icon" class="icon" />
+                <div>
+                  <h3>React Js</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/npmjs-fill.svg" alt="Node icon" class="icon" />
+                <div>
+                  <h3>PostgreSQL</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/express.png" alt="Express icon" class="icon" />
+                <div>
+                  <h3>Spring Boot</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/Mongodb.png" alt="Mongo DB icon" class="icon" />
+                <div>
+                  <h3>MySQL</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/git-branch-fill.svg" alt="Git icon" class="icon" />
+                <div>
+                  <h3>Github</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/rest-apis.png" alt="AR/VR icon" class="icon" />
+                <div>
+                  <h3>REST APIs</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/images.png" alt="AR/VR icon" class="icon" />
+                <div>
+                  <h3>JWT</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/oauth.png" alt="AR/VR icon" class="icon" />
+                <div>
+                  <h3>OAUTH2</h3>
+                </div>
+              </article>
+            </div>
+            <br>
+            <h2 class="experience-sub-title underline">Tools</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/icons8-vs-code.svg" alt="VS code icon" class="icon" />
+                <div>
+                  <h3>VS Code</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/icons8-unity.svg" alt="Unity icon" class="icon" />
+                <div>
+                  <h3>Eclipse IDE</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/icons8-blender.png" alt="Blender icon" class="icon" />
+                <div>
+                  <h3>Linux (Ubuntu, kali)</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/icons8-photoshop.png" alt="Photoshop icon" class="icon" />
+                <div>
+                  <h3>Jira</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title underline">Languages</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/python.svg" alt="python icon" class="icon" />
+                <div>
+                  <h3>C++</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/java.svg" alt="java icon" class="icon" />
+                <div>
+                  <h3>Java</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/javascript.svg" alt="javascript icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/mysql.svg" alt="mysql icon" class="icon" />
+                <div>
+                  <h3>My SQL</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/csharp.webp" alt="c# icon" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/html5-fill.svg" alt="html icon" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/php.png" alt="PHP icon" class="icon" />
+                <div>
+                  <h3>PHP</h3>
+                </div>
+              </article>
+            </div>
+            <br>
+            <h2 class="experience-sub-title underline">Subject Interests</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/oops.png" alt="OOPS" class="icon" />
+                <div>
+                  <h3>OOPS</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/DSA.png" alt="dsa icon" class="icon" />
+                <div>
+                  <h3>DSA</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/icons8-operating-system-64.png" alt="OS icon" class="icon" />
+                <div>
+                  <h3>Operating Systems</h3>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/icons8-database-64.png" alt="DBMS" class="icon" />
+                <div>
+                  <h3>DBMS</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects" style="margin-top: 9rem;">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div id="projects-container" class="experience-details-container swiper">
+        <div class=" swiper-wrapper">
+          <div class="details-container color-container swiper-slide">
+            <div class="article-container">
+              <img src="./assets/project-1.png" alt="Doctor AI" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">AutoBuy</h2>
+            
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/atul-dev26/AutoBuy'">
+                Github
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container swiper-slide">
+            <div class="article-container">
+              <img src="./assets/project-2.png" alt="chat app" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Realtime Chat App</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/atul-dev26/real-time-chat'">
+                Github
+              </button>
+            </div>
+          </div>
+
+
+
+          <div class="details-container color-container swiper-slide">
+            <div class="article-container">
+              <img src="./assets/project-3.png" alt="cyclone project" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Cyclone Prediction</h2>
+            <div class="btn-container">
+            </div>
+          </div>
+
+          <div class="details-container color-container swiper-slide">
+            <div class="article-container">
+              <img src="./assets/project-4.png" alt="Gold Price Notifier" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">GrowthHub</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/atul-dev26/Growth-Hub'">
+                Github
+            </div>
+          </div>
+
+
+          <div class="details-container color-container swiper-slide">
+            <div class="article-container">
+              <img src="./assets/project-6.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Tic-Tac-Toe (MINIMAX)</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://tic-tac-toe0123.netlify.app/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+
+          <div class="details-container color-container swiper-slide">
+            <div class="article-container">
+              <img src="./assets/project-7.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Online IDE </h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/atul-dev26/online-ide'">
+                Github
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container swiper-slide">
+            <div class="article-container">
+              <img src="./assets/project-8.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Rate Distributor limiter</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/atul-dev26/rate-distributor-limiter-service'">
+                Github
+              </button>
+            </div>
+          </div>
+
+
+
+
+        </div>
+        <div class="swiper-button swiper-button-prev"></div>
+        <div class="swiper-button swiper-button-next"></div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#coding-profiles'" />
+    </section>
+
+    <section id="coding-profiles">
+      <p class="section__text__p1">Go Through My</p>
+      <h1 class="title">Code Profiles</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/coding-profiles-section.gif" alt="Coding Profiles picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/leetcode.png" alt="Leetcode icon" class="icon" />
+              <br>
+              <h3>LeetCode</h3>
+              <p> Solved <b> 80+</b> problems on <br />LeetCode Platform</p>
+              <br>
+              <br>
+              <br>
+              <button class="btn btn-color-2 project-btn download"
+                onclick="location.href='https://leetcode.com/u/Atul5_tiwari-/'">
+                Link <i class="ri-arrow-up-line"></i>
+              </button>
+            </div>
+            <div class="details-container">
+              <img src="./assets/codeingninjas.png" alt="School" class="icon" />
+              <br>
+              <h3>CodeForces</h3>
+              <p>Solved 100+ problems on Codeforces platform.</p>
+              <br>
+              <br>
+              <br>
+              <button class="btn btn-color-2 project-btn download"
+                onclick="location.href='https://codeforces.com/profile/atul.codes'">
+                Link <i class="ri-arrow-up-line"></i>
+              </button>
+            </div>
+            
+            <p>
+               I'm Atul, an Electrical engineering student set to graduate in 2028. Coding is my passion, and
+              I'm
+              an enthusiastic problem solver.One thing that keeps me going even after facing challenges in this field is the joy of creating something new. Excited to explore the tech world and make a positive impact! 
+              #CodeEnthusiast #FutureGraduate
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:palindrajit10@gmail.com">atul.tiwari.ug24@nsut.ac.in</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="linkedin.com/in/atul-kumar-tiwari-73a264328">LinkedIn</a></p>
+        </div>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/atul-kumar-tiwari-73a264328'" />
+
+        <img src="./assets/instagram-fill.svg" alt="My Instagram profile" class="icon"
+          onclick="location.href='https://www.instagram.com/atul_tiwari26/'" />
+
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/atul-dev26'" />
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2026 Atul kumar Tiwari. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+  <script src="lightDarkMode.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Engineer', 'Coder', 'Aretḗ'],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true
+    });
+  </script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      direction: 'horizontal',
+      spaceBetween: 24,
+
+      speed: 400,
+      loop: true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false
+      },
+      slidesPerView: 'auto',
+
+      centeredSlides: true,
+
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+  <script>
+    var preloader = document.getElementById('loading');
+    var main = document.getElementById('mainContent');
+
+    // Function to hide the loader after 2 seconds
+    function hideLoader() {
+      setTimeout(function () {
+        preloader.style.display = 'none';
+        main.style.display = 'block';
+      }, 2000); // 2000 milliseconds (2 seconds)
+    }
+
+    // Call the hideLoader function when the page is loaded
+    window.onload = hideLoader;
+  </script>
+
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"
+    integrity="sha512-auFmPm+de880vk/c+bgBmuOnQ7BM28z7zPWmepVgX8737t75OHZjElOnQqERwP8cE4DIyCJ+gb1kE0b/eLWcnA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+  <script src="https://www.unpkg.com/shery-js@1.0.0-alpha.0.5/dist/Shery.js"></script>
+  <script>
+    Shery.mouseFollower();
+  </script>
+  <!-- <script>
+      setTimeout(function () {
+        $('.loader_bg').fadeToggle();
+      }, 2000);
+    </script> -->
+
+</body>
+
+</html>
